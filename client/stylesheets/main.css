@@ -11,10 +11,10 @@
     color: #cccccc
 }
 
-/* Body Container */
+/* Body Container 
 body{
     background-color: lightsteelblue;
-}
+}*/
 
 .top-margin{
 	margin-top:50px;
@@ -26,6 +26,7 @@ body{
 .navbar-fixed-bottom{
     min-height: 30px;
 }
+
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
@@ -55,7 +56,7 @@ p {
 /* +++++ WRAP SECTIONS +++++ */
 
 #ww {
-    padding-top: 30px;
+    padding-top: 70px;
     padding-bottom: 30px;
     background-color: #f2f2f2;
 }
@@ -75,4 +76,44 @@ p {
     color: white;
     text-transform: uppercase;
     padding-bottom: 20px;
+}
+
+
+/* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
+/* Effects also are controled by hover.zoom.js */
+.zoom { 
+    display:block; 
+    position:relative; 
+    overflow:hidden; 
+    background:transparent url(../img/loader.gif) no-repeat center;
+}
+
+
+    .zoomOverlay {
+        position:absolute;
+        top:0; left:0;
+        bottom:0; right:0;
+        display:none;
+        background-image:url(../img/zoom.png);
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+
+.zoom2 {
+    opacity: 1;
+}
+
+.zoom2:hover {
+    opacity: 0.5;
+}
+
+/* glyphicon Configuration */
+
+.glyphicon {
+    font-size: 40px;
+    color: #1abc9c;
+}
+
+.edit-image {
+    width: 100px;
 }

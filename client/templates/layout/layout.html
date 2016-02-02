@@ -1,12 +1,20 @@
+<body>
+  {{renderPage}}
+</body>
+
 
 <template name="layout">
+
+
+	{{> yield "navbar"}}
+
+	{{> flashMessages}}
 	
-	{{> yield "header"}}
-	
-	<div class="container top-margin">
+	 <div id="ww">
 		{{> yield "main"}}
-	</div>
+	  </div><!-- /ww -->
 
 	{{> yield "footer"}}
-  	
+
+  	{{> footer}}
 </template>
