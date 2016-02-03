@@ -16,8 +16,8 @@
           <li>{{#linkTo route="blog"}}<i class="fa fa-list-alt"></i> Blog{{/linkTo}}</li>
           <li>{{#linkTo route="news"}}<i class="fa fa-newspaper-o"></i> News{{/linkTo}}</li>
           {{#if currentUser}}
-            <li>{{#linkTo route="issuesList"}}<i class="fa fa-rocket"></i> Admin Projects{{/linkTo}}</li>
-            <li>{{#linkTo route="blogAdmin"}}<i class="fa fa-lock"></i> Admin Blogs{{/linkTo}}</li>
+            <li>{{#linkTo route="/"}}<i class="fa fa-rocket"></i> Admin Projects{{/linkTo}}</li>
+            <li>{{#linkTo route="/admin/blog"}}<i class="fa fa-lock"></i> Admin{{/linkTo}}</li>
           {{/if}}
           <li>{{#linkTo route="contact"}}<i class="fa fa-envelope"></i> Contact{{/linkTo}}</li>
           <li>{{#linkTo route="about"}}<i class="fa fa-question"></i> About{{/linkTo}}</li>
